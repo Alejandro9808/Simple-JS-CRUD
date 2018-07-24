@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 id="title">Simple CRUD App</h1>
+    <h2 id="subtitle">Create, Read, Update And Delete App</h2>
+
+    <p id="desc-panel">
+        En esté pequeño ejemplo se muestra un ejemplo de una aplicación CRUD,
+        que Crea, Ve, Edita y Elimina registros de personas usando JavaScript y JQuery.
+        Del mismo modo se demuestra el uso de eventos del usuario(<em>Click, Hover, MouseDown, etc.</em>)
+    </p>
+
+    <div id="main-panel">
+        <div id="table-panel">
+            <table border="1">
+                <thead>
+                <tr>
+                    <th>Id.</th>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Edad</th>
+                    <th style="border-right: inherit">Color</th>
+                </tr>
+                </thead>
+                <tbody id="table-items">
+                </tbody>
+            </table>
+
+        </div>
+        <div id="editor-panel">
+            <div id="editor-fields">
+                <h4>Editor de Personas</h4>
+                <form>
+                    <label for="nom">Nombre</label><br>
+                    <input type="text" id="nom" placeholder="Ej. Omari"><br>
+                    <label for="apellidos">Apellidos</label><br>
+                    <input type="text" id="apellidos" placeholder="Ej. Sanchez"><br>
+                    <label for="edad">Edad</label><br>
+                    <input type="text" id="edad" placeholder="Ej. 20"><br>
+                    <label for="color">Color</label><br>
+                    <input type="color" value="#ffffff" id="color" placeholder="Ej. Rojo">
+                </form>
+
+            </div>
+            <div id="editor-controls" align="center">
+                <button id="nuevo">Nuevo</button>
+                <button id="cancelar">Cancelar</button>
+                <button id="guardar">Guardar</button>
+                <button id="eliminar">Eliminar</button>
+            </div>
+        </div>
+    </div>
+
+<script src="jquery-3.3.1.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
